@@ -2,7 +2,7 @@ import BrowseByCategory from "@/components/categoriesSection/BrowseByCategory";
 import FirstSection from "@/components/firstSection/firstSection";
 import SecondSection from "@/components/flashSalesSection/SecondSection";
 import Footer from "@/components/Footer";
-import HighlightSection from "@/components/productHighlightSection/highlightSection";
+import HighlightSection from "@/components/productHighlightSection/HighlightSection";
 
 
 export default function Home({ searchParams }) {
