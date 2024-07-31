@@ -1,18 +1,14 @@
-// Navbar.tsx
-"use client";
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { FiSearch, FiHeart, FiShoppingCart } from 'react-icons/fi';
 
 const Navbar = () => {
-    const currentPath = usePathname();
 
     const navLinks = [
-        { href: '/', label: 'Home' },
-        { href: '/contact', label: 'Contact' },
-        { href: '/about', label: 'About' },
-        { href: '/signup', label: 'Sign Up' }
+        { href: '/', label: 'Home', active: true },
+        { href: '/', label: 'Contact' },
+        { href: '/', label: 'About' },
+        { href: '/', label: 'Sign Up' }
     ];
 
     return (
@@ -31,7 +27,7 @@ const Navbar = () => {
                         <Link 
                             key={link.href} 
                             href={link.href} 
-                            className={currentPath === link.href ? "active-link" : ""}
+                            className={link.active === true ? "active-link" : ""}
                         >
                             {link.label}
                         </Link>

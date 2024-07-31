@@ -25,7 +25,7 @@ const CarouselSection = () => {
               layout="intrinsic" 
               width={1200} 
               height={600} 
-              className="w-full h-auto" 
+              className="w-full h-auto z-10" 
             />
           </CarouselItem>
           <CarouselItem className="flex justify-center">

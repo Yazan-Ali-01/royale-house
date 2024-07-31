@@ -24,10 +24,10 @@ const Sidebar = () => {
               {category.sublinks && <FiChevronRight className="text-gray-500" />}
             </div>
             {category.sublinks && (
-              <div className="absolute left-full top-0 mt-2 bg-white shadow-lg border border-gray-200 rounded-lg hidden group-hover:block">
+              <div className="absolute left-full top-0 mt-2 bg-white shadow-lg border border-gray-200 rounded-lg hidden group-hover:block z-50">
                 <ul className="py-2">
                   {category.sublinks.map((sublink, subIndex) => (
-                    <li key={subIndex} className="px-4 py-2 hover:bg-gray-100">
+                    <li key={subIndex} className="px-4 py-2 hover:bg-gray-100 z-50">
                       {sublink}
                     </li>
                   ))}
